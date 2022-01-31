@@ -4,7 +4,7 @@ import 'package:movieapp/repositories/movies_repository.dart';
 
 class MovieController {
   final MoviesRepository _moviesRepository;
-  late ValueNotifier<Movies> movies;
+  ValueNotifier<Movies?> movies = ValueNotifier<Movies?>(null);
   MovieController(this._moviesRepository) {
     fetch();
   }
