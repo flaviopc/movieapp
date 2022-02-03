@@ -14,7 +14,7 @@ class CustomListCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 200,
-      decoration: BoxDecoration(color: Colors.black45),
+      decoration: BoxDecoration(color: Colors.grey),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

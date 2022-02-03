@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:movieapp/controllers/movie_controller.dart';
 import 'package:movieapp/models/movie_model.dart';
 import 'package:movieapp/repositories/movies_repository_imp.dart';
@@ -42,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                           itemBuilder: (_, idx) =>
                               CustomListCard(movie: movies.listMovies[idx]),
                         )
-                      : Container();
+                      : Lottie.asset('assets/lottie.json');
                 },
               ),
             ],
