@@ -30,7 +30,15 @@ class _HomePageState extends State<HomePage> {
               SizedBox(
                 height: 20,
               ),
-              Text("Movies", style: Theme.of(context).textTheme.headline3),
+              ValueListenableBuilder<Movies?>(
+                  valueListenable: _controller.movies,
+                  builder: (_, movies, __) {
+                    return Visibility(
+                      visible: movies != null,
+                      child: Text("Movies",
+                          style: Theme.of(context).textTheme.headline3),
+                    );
+                  }),
               ValueListenableBuilder<Movies?>(
                 valueListenable: _controller.movies,
                 builder: (_, movies, __) {
