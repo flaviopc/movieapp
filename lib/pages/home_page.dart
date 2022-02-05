@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               ValueListenableBuilder<Movies?>(
@@ -47,6 +47,10 @@ class _HomePageState extends State<HomePage> {
                               style: Theme.of(context).textTheme.headline3),
                           const SizedBox(height: 10),
                           TextField(
+                            style: TextStyle(fontSize: 20),
+                            decoration: const InputDecoration(
+                                hintText: "Buscar...",
+                                prefixIcon: Icon(Icons.search_outlined)),
                             onChanged: _controller.onChanged,
                           ),
                         ],
