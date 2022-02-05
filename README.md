@@ -1,16 +1,31 @@
-# movieapp
+# MovieApp
 
-A new Flutter project.
+App de exibição de filmes usando a api [The Movie DB](https://www.themoviedb.org/).
+
+Foi usado o **Dio** para requisição Http;
+
+**SharedPreferences** para salvar filmes em cache;
+
+Pesquisa de filmes em cache;
+
+Pequenas animações com **Lottie** e **Hero**;
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+```
+- Clone esse repositório:
+$ git clone https://github.com/flaviopc/movieapp
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Entre no diretório:
+$ cd movieapp
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Instale as dependências:
+$ flutter pub get
+
+- Inicie o app:
+$ flutter run
+```
+
+---
